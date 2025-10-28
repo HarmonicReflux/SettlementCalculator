@@ -79,4 +79,4 @@ same day → 0.0
 • Add or update tests when behaviour changes  
 • If you are here for Hacktoberfest  
   • the repository topic `hacktoberfest` should be set by a maintainer  
-  • merged pull requests count after the seven day review window
+  • merged pull requests count after the seven-day review window
