@@ -1,5 +1,3 @@
-# SettlementCalculator
-
 # Settlement Calculator
 
 Utilities for computing durations as decimal months and for discrete month-by-month compounding. Built in Python with pandas. Sized for quick Hacktoberfest contributions.
