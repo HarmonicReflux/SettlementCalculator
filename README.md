@@ -46,10 +46,10 @@ Python API
 from settlementcalculator import months_elapsed_decimal, compounded_value
 
 # Decimal months
-m = months_elapsed_decimal("2024-01-31", "2024-03-15")
+m = months_elapsed_decimal('2024-01-31', '2024-03-15')
 print(round(m, 4))  # expected about 1.4839
 
 # Discrete monthly compounding
 v = compounded_value(principal=1000.0, monthly_rate=0.01,
-                     start="2024-01-31", end="2024-03-15")
+                     start='2024-01-31', end='2024-03-15')
 print(round(v, 2))
