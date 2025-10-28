@@ -53,3 +53,30 @@ print(round(m, 4))  # expected about 1.4839
 v = compounded_value(principal=1000.0, monthly_rate=0.01,
                      start='2024-01-31', end='2024-03-15')
 print(round(v, 2))
+```
+
+### Reference checks
+
+2024-01-31 to 2024-02-29 → 1.0  
+2023-01-31 to 2023-02-28 → 1.0  
+2024-01-31 to 2024-03-15 → about 1.4839  
+2025-03-01 to 2025-03-31 → about 0.9677  
+same day → 0.0
+
+### Development notes
+
+#### Standard layout
+• `pyproject.toml` and `uv.lock` define and lock dependencies  
+• `requirements.txt` is provided for pip users  
+• Tests live under `tests/`
+
+#### Python version
+• `.python-version` pins 3.12  
+• In `pyproject.toml` set `requires-python = ">=3.12,<3.13"`
+
+### Contributing
+• Keep pull requests small and focused  
+• Add or update tests when behaviour changes  
+• If you are here for Hacktoberfest  
+  • the repository topic `hacktoberfest` should be set by a maintainer  
+  • merged pull requests count after the seven day review window
