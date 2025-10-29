@@ -35,7 +35,7 @@ def months_between(start: TimestampLike, end: TimestampLike, *, eom_rule: bool =
     if next_anchor <= anchor:
         frac = 0.0
     else:
-        frac = float((e - anchor) / (next_anchor - anchor))
+        frac = (e - anchor) / (next_anchor - anchor)
         if frac < 0.0:
             frac = 0.0
         elif frac > 1.0:
