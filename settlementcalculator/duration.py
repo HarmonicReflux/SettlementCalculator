@@ -10,7 +10,7 @@ def months_between(start: TimestampLike, end: TimestampLike, *, eom_rule: bool=T
     
     1. Count whole calendar months first.
     2. Add a final fractional month as `(end - anchor) / (next_anchor - anchor)`.
-    3. If `start` is month‑end and `eom_rule=True`, month steps land on month‑end.
+    3. If `start` is month-end and `eom_rule=True`, month steps land on month-end.
     """
     s = pd.to_datetime(start)
     e = pd.to_datetime(end)
