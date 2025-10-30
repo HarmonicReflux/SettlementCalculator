@@ -4,7 +4,7 @@ from typing import Union
 
 TimestampLike = Union[str, pd.Timestamp]
 
-def months_between(start: TimestampLike, end: TimestampLike, *, eom_rule: bool = True, allow_negative: bool = True) -> float:
+def months_between(start: TimestampLike, end: TimestampLike, *, eom_rule: bool=True, allow_negative: bool=True) -> float:
     """
     Minimal function to compute elapsed time between two dates **in decimal months** using pandas.
     
